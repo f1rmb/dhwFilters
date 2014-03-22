@@ -57,7 +57,8 @@ class dhwFilters
         dhwFilters(uint8_t s0, uint8_t s1, uint8_t s2);
         virtual ~dhwFilters();
 
-        bool                        SetUserFilterName(FilterWidth_t filter, String name);
+        bool                        SetUserFilterName(FilterWidth_t filter, const String &name);
+        bool                        SetUserFilterName(FilterWidth_t filter, const __FlashStringHelper *ifsh);
         bool                        SetUserFilterEnabled(FilterWidth_t filter, bool enabled = true);
         FilterWidth_t               SetFilter(FilterWidth_t filter);
         const String                GetFilterName();

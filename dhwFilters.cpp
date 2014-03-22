@@ -69,7 +69,7 @@ dhwFilters::FilterWidth_t dhwFilters::SetFilter(FilterWidth_t filter)
     return m_currentFilter;
 }
 
-bool dhwFilters::SetUserFilterName(FilterWidth_t filter, String name)
+bool dhwFilters::SetUserFilterName(FilterWidth_t filter, const String &name)
 {
     if (m_Filters[filter].m_readonly == false)
     {
@@ -78,6 +78,38 @@ bool dhwFilters::SetUserFilterName(FilterWidth_t filter, String name)
     }
 
     return false;
+}
+
+bool dhwFilters::SetUserFilterName(FilterWidth_t filter, const __FlashStringHelper *ifsh)
+{
+    const char * __attribute__((progmem)) p = (const char *)ifsh;
+    size_t                                n = 0;
+
+    while (1) {
+        unsigned char c = pgm_read_byte(p++);
+        if (c == 0)
+            break;
+        n++;
+    }
+
+    if (!n)
+        return false;
+
+    char     buf[n + 1];
+    char    *pp = buf;
+
+    p = (const char *) ifsh;
+
+    while (1) {
+        unsigned char c = pgm_read_byte(p++);
+        *pp = c;
+        pp++;
+
+        if (c == 0)
+            break;
+    }
+
+    return SetUserFilterName(filter, buf);
 }
 
 bool dhwFilters::SetUserFilterEnabled(FilterWidth_t filter, bool enabled)
