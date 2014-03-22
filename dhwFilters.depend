@@ -442,3 +442,91 @@
 1395238566 /home/daniel/src/Arduino/dhwFilters/dhwFilters.h
 	<Arduino.h>
 
+1395232217 source:/home/daniel/src/Arduino/Arduino/dhwFilters/cores/CDC.cpp
+	<CDC.cpp>
+
+1395232217 source:/home/daniel/src/Arduino/Arduino/dhwFilters/cores/HardwareSerial.cpp
+	<HardwareSerial.cpp>
+
+1395232217 source:/home/daniel/src/Arduino/Arduino/dhwFilters/cores/HID.cpp
+	<HID.cpp>
+
+1395232217 source:/home/daniel/src/Arduino/Arduino/dhwFilters/cores/IPAddress.cpp
+	<IPAddress.cpp>
+
+1395232217 source:/home/daniel/src/Arduino/Arduino/dhwFilters/cores/main.cpp
+	<main.cpp>
+
+1395232217 source:/home/daniel/src/Arduino/Arduino/dhwFilters/cores/new.cpp
+	<new.cpp>
+
+1395232217 source:/home/daniel/src/Arduino/Arduino/dhwFilters/cores/Print.cpp
+	<Print.cpp>
+
+1395232217 source:/home/daniel/src/Arduino/Arduino/dhwFilters/cores/Stream.cpp
+	<Stream.cpp>
+
+1395232217 source:/home/daniel/src/Arduino/Arduino/dhwFilters/cores/Tone.cpp
+	<Tone.cpp>
+
+1395232217 source:/home/daniel/src/Arduino/Arduino/dhwFilters/cores/USBCore.cpp
+	<USBCore.cpp>
+
+1395232217 source:/home/daniel/src/Arduino/Arduino/dhwFilters/cores/WInterrupts.c
+	<WInterrupts.c>
+
+1395232217 source:/home/daniel/src/Arduino/Arduino/dhwFilters/cores/wiring.c
+	<wiring.c>
+
+1395232217 source:/home/daniel/src/Arduino/Arduino/dhwFilters/cores/wiring_analog.c
+	<wiring_analog.c>
+
+1395232217 source:/home/daniel/src/Arduino/Arduino/dhwFilters/cores/wiring_digital.c
+	<wiring_digital.c>
+
+1395232217 source:/home/daniel/src/Arduino/Arduino/dhwFilters/cores/wiring_pulse.c
+	<wiring_pulse.c>
+
+1395232217 source:/home/daniel/src/Arduino/Arduino/dhwFilters/cores/wiring_shift.c
+	<wiring_shift.c>
+
+1395232217 source:/home/daniel/src/Arduino/Arduino/dhwFilters/cores/WMath.cpp
+	<WMath.cpp>
+
+1395232217 source:/home/daniel/src/Arduino/Arduino/dhwFilters/cores/WString.cpp
+	<WString.cpp>
+
+1395232217 source:/home/daniel/src/Arduino/Arduino/dhwFilters/libraries/libraries.cpp
+	<Arduino.h>
+	"EEPROM.cpp"
+	"Ethernet.cpp"
+	"EthernetClient.cpp"
+	"EthernetServer.cpp"
+	"EthernetUdp.cpp"
+	"Firmata.cpp"
+	"LiquidCrystal.cpp"
+	"LCD4884.cpp"
+	"OBD.cpp"
+	"SD.cpp"
+	"Sd2Card.cpp"
+	"SdFile.cpp"
+	"SdVolume.cpp"
+	"File.cpp"
+	"Servo.cpp"
+	"SoftwareSerial.cpp"
+	"SPI.cpp"
+	"stepper.cpp"
+	"TinyGPS.cpp"
+	"Wire.cpp"
+	"twi.c"
+
+1395417060 source:/home/daniel/src/Arduino/Arduino/dhwFilters/sketch.cpp
+	<Arduino.h>
+	"dhwFilters.h"
+
+1395417541 /home/daniel/src/Arduino/Arduino/dhwFilters/dhwFilters.h
+	<Arduino.h>
+
+1395417181 source:/home/daniel/src/Arduino/Arduino/dhwFilters/dhwFilters.cpp
+	"dhwFilters.h"
+
