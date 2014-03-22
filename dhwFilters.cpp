@@ -1,3 +1,25 @@
+/*
+  Filters Board Management Class, designed to work with the card developped
+  by WB6DHW available at http://wb6dhw.com/BPF.html
+
+
+  Copyright (C) 2014 F1RMB, Daniel Caujolle-Bert <f1rmb.daniel@gmail.com>
+
+  This program is free software; you can redistribute it and/or
+  modify it under the terms of the GNU General Public License
+  as published by the Free Software Foundation; either version 2
+  of the License, or (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program; if not, write to the Free Software
+  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+*/
+
 #include "dhwFilters.h"
 
 dhwFilters::dhwFilters(uint8_t s0, uint8_t s1, uint8_t s2) : m_S0(s0), m_S1(s1), m_S2(s2), m_currentFilter(FILTER_24_71)
@@ -77,6 +99,21 @@ const String dhwFilters::GetFilterName()
 const String dhwFilters::GetFilterName(FilterWidth_t filter)
 {
     return _getFilterName(filter);
+}
+
+uint8_t dhwFilters::GetMaxNameLength()
+{
+    uint8_t len = 0;
+
+    for (uint8_t i = 0; i < sizeof(m_Filters) / sizeof(m_Filters[0]); i++)
+    {
+        uint8_t l = m_Filters[i].m_name.length();
+
+        if (len < l)
+            len = l;
+    }
+
+    return len;
 }
 
 dhwFilters::FilterWidth_t dhwFilters::GetFilter()
